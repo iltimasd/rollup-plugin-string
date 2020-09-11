@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-hjson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts hjson files to modules",
   "main": "index.js",
   "files": [
