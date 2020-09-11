@@ -1,4 +1,5 @@
 const { createFilter } = require("rollup-pluginutils");
+const hjson = require("hjson");
 
 function string(opts = {}) {
   if (!opts.include) {
@@ -13,11 +14,11 @@ function string(opts = {}) {
     transform(code, id) {
       if (filter(id)) {
         return {
-          code: `export default ${JSON.stringify(code)};`,
-          map: { mappings: "" }
+          code: `export default ${hjson.stringify(code)};`,
+          map: { mappings: "" },
         };
       }
-    }
+    },
   };
 }
 

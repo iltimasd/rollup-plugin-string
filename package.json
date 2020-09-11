@@ -1,13 +1,17 @@
 {
-  "name": "rollup-plugin-string",
-  "version": "3.0.0",
-  "description": "Converts text files to modules",
+  "name": "rollup-plugin-hjson",
+  "version": "0.0.1",
+  "description": "Converts hjson files to modules",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "dependencies": {
+    "hjson": "^3.2.1",
     "rollup-pluginutils": "^2.4.1"
+  },
+  "peerDependencies": {
+    "rollup-plugin-node-polyfills": "0.2.1"
   },
   "devDependencies": {
     "mocha": "^6.0.1",
@@ -19,18 +23,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrySound/rollup-plugin-string.git"
+    "url": "git+https://github.com/iltimasd/rollup-plugin-string.git"
   },
   "keywords": [
     "rollup-plugin",
-    "stringify",
-    "string",
+    "hjson",
+    "json",
     "template"
   ],
-  "author": "Bogdan Chadkin <trysound@yandex.ru>",
+  "author": "Iltimas Doha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TrySound/rollup-plugin-string/issues"
+    "url": "https://github.com/iltimasd/rollup-plugin-string/issues"
   },
-  "homepage": "https://github.com/TrySound/rollup-plugin-string"
+  "homepage": "https://github.com/iltimasd/rollup-plugin-string"
 }
